@@ -57,13 +57,13 @@ let OpcionSeleccionar
                 case `3`:
                 const STAND = 300
                 const CantidadDeStand = Number(prompt("Ingrese la cantidad de stands que solicito"))
-                const DiasdeAtraso = Number(prompt("Ingrese la cantida de Dias que se atraso"))
+                const DiasdeAtraso = Number(prompt("Ingrese la cantida de dias que se atraso"))
                 const MoraCapitablizable = 0.02
                 const CostoTotaldeStands = STAND * CantidadDeStand
                 const Subtotal = CostoTotaldeStands * MoraCapitablizable
                 const Total = CostoTotaldeStands + Subtotal
                 if (DiasdeAtraso >= 2) {
-                    alert(`el total a pagar con retraso es de ${Total}`)
+                    alert(`el total a pagar con interes es de ${Total}`)
                 } else {
                     alert(`El total a pagar es de ${CostoTotaldeStands}`)
                 }
